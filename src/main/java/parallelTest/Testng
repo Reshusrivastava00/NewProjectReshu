@@ -1,0 +1,20 @@
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite
+
+why we send thread count in testng?
+Cross Browser Testing
+Thread count
+Priority (priority=1)
+Enable/Disable(Enable=false)/(Enable=true)
+Grouping((groups = { "Reshu" })
+run one test multiple times (invocationCount = 10)
+
+
+
