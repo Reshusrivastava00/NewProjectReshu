@@ -1,6 +1,14 @@
 Cross Browser Testing:
  Its a type of functional test to check that your web application works as expected in different browsers.
 
+How to perform Cross Browser Testing
+If we are using Selenium WebDriver, we can automate test cases using Internet Explorer,
+FireFox, Chrome, Safari browsers.
+To execute test cases with different browsers in the same machine at the same time
+we can integrate Testng framework with Selenium WebDriver.
+Cross Browser Testing : Cross Browser Testing is a type of functional test
+to check that your web application works as expected in different browsers.
+
 Why do we need Cross Browser Testing?
 Web-based applications are totally different from Windows applications.
 A web application can be opened in any browser by the end user.
@@ -16,11 +24,10 @@ Reason Cross Browser Issues
 5. Page alignment and div size.
 6. Image orientation.
 7. Browser incompatibility with OS. Etc.
-
-How to perform Cross Browser Testing
-If we are using Selenium WebDriver, we can automate test cases using Internet Explorer,
-FireFox, Chrome, Safari browsers.
-To execute test cases with different browsers in the same machine at the same time
-we can integrate Testng framework with Selenium WebDriver.
-
+Summary :
+1. Cross browser Testing is a technique to test web application with different web browsers.
+2. Selenium can support different type of browsers for automation.
+3. Selenium can be integrated with TestNG to perform Multi Browser Testing.
+4. From parameters in testing.xml we can pass browser name, and in a test case,
+   we can create WebDriver reference accordingly.
 

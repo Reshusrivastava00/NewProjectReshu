@@ -12,16 +12,6 @@ why we send thread count in testng? :
         It's the number of tests that are run at the same time.
         It takes up more slots in the grid because is uses one grid slot per test run.
 
-Cross Browser Testing : Cross Browser Testing is a type of functional test
-to check that your web application works as expected in different browsers.
-
-Summary :
-1. Cross browser Testing is a technique to test web application with different web browsers.
-2. Selenium can support different type of browsers for automation.
-3. Selenium can be integrated with TestNG to perform Multi Browser Testing.
-4. From parameters in testing.xml we can pass browser name, and in a test case,
-   we can create WebDriver reference accordingly.
-
 Thread count : Thread count is basically a number of instances running
                to execute multiple tests simultaneously or in parallel.
                The attribute thread-count allows the user to specify
