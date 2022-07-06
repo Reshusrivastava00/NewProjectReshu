@@ -33,12 +33,12 @@ public class CrossBrowserScript {
         driver.get("https://www.amazon.com");
     }
 
-    @AfterTest
-    public void quitdriver(){
-        driver.quit();
+   // @AfterTest
+    //public void quitdriver(){
+       // driver.quit();
     }
 
-}
+
 
 
 

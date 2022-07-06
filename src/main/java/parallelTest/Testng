@@ -8,13 +8,40 @@
 @AfterTest
 @AfterSuite
 
-why we send thread count in testng?
-Cross Browser Testing
-Thread count
-Priority (priority=1)
-Enable/Disable(Enable=false)/(Enable=true)
-Grouping((groups = { "Reshu" })
-run one test multiple times (invocationCount = 10)
+why we send thread count in testng? :
+        It's the number of tests that are run at the same time.
+        It takes up more slots in the grid because is uses one grid slot per test run.
+
+Cross Browser Testing : Cross Browser Testing is a type of functional test
+to check that your web application works as expected in different browsers.
+
+Summary :
+1. Cross browser Testing is a technique to test web application with different web browsers.
+2. Selenium can support different type of browsers for automation.
+3. Selenium can be integrated with TestNG to perform Multi Browser Testing.
+4. From parameters in testing.xml we can pass browser name, and in a test case,
+   we can create WebDriver reference accordingly.
+
+Thread count : Thread count is basically a number of instances running
+               to execute multiple tests simultaneously or in parallel.
+               The attribute thread-count allows the user to specify
+               how many threads should be run for this execution.
+
+Priority (priority=1) : Priority is an attribute that helps the users define the order
+                         in which they want the test cases to be executed.
+                         When we have multiple test cases and want them to run in a particular order,
+                         we can use the Priority attribute to set test priority in TestNG
+
+Enable/Disable(Enable=false)/(by default :Enable=true) : To disable a test in TestNG, we should
+                         set the enabled attribute of the @Test annotation to false .
+                         The default attribute value of enabled is true.
+
+Grouping((groups = { "Reshu" }) : TestNG Groups allows us to perform groupings of different test methods.
+                                   Grouping of test methods is required when we want to access the test methods of different classes.
+                                   Not only we can declare the methods within a specified group.
+                                   we can also declare another group within a specified group.
+
+run one test multiple times : (invocationCount = 10)
 
 
 

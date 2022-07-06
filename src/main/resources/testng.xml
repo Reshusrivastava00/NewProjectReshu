@@ -10,6 +10,23 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-
-
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="parallelTest.CrossBrowserScript">
+            </class>
+        </classes>
+    </test>
+    <!-- <test name="EdgeTest">-->
+    <!--     <parameter name="browser" value="Edge" />-->
+    <!--  <classes>-->
+    <!--   <class name="parallelTest.CrossBrowserScript">-->
+    <!-- </class>-->
+    <!--   </classes>-->
+    <!-- </test>-->
 </suite>
+
+
+
+
+
