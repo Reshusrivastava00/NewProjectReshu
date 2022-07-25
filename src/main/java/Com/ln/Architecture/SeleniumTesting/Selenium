@@ -1,0 +1,11 @@
+1. Find Broken Links in Selenium.
+A broken link, also often called a dead link, is one that does not work i.e. does not redirect to the webpage it is meant to.
+This usually occurs because the website or particular web page is down or does not exist. When someone clicks on a broken link,
+an error message is displayed.
+
+** Use the following steps to identify broken links in Selenium:
+Collect all the links present on a web page based on the <a> tag
+Send HTTP request for each link
+Verify the HTTP response code
+Determine if the link is valid or broken based on the HTTP response code
+Repeat the process for all links captured with the first step

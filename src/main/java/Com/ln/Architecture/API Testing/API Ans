@@ -1,0 +1,69 @@
+1. What must be checked when performing API testing?
+During the API testing process, a request is raised to the API with the known data.
+This way we can analyze the validation response. While testing an API, We should consider:
+* Accuracy of data
+* Schema validation
+* HTTP status codes
+* Data type, validations, order and completeness
+* Authorization checks
+* Implementation of response timeout
+* Error codes in case API returns, and Non-functional testing like performance and security testing
+
+2. What are some architectural styles for creating a Web API?
+This is one of the fundamental Web API interview questions. Bellows are four common Web API architectural styles:
+* HTTP for client-server communication
+* XML/JSON as formatting language
+* Simple URI as the address for the services
+* Stateless communication
+
+3. What are the common API testing types?
+  While there are certainly specialty tests, and no list can be asked to be comprehensive
+ in this realm, most tests fit broadly into these following nine categories that you should
+ remember before attending in an API testing interview.
+ * Validation Testing
+ *Functional TestingUI testing
+ * Load testing
+ * Runtime/ Error Detection
+ * Security testing
+ * Penetration testing
+ * Fuzz testing
+
+ 4. What is the procedure to perform API testing?
+  * Choose the suite to add the API test case
+  * Choose the test development mode
+  * Demand the development of test cases for the required API methods
+  * Configure the control parameters of the application and then test conditions
+  * Configure method validation
+  * Execute the API test
+  * Check test reports and filter API test cases
+  * Arrange all API test cases
+
+  5. What are major challenges faced in API testing?
+  If you can overcome the challenges in API Testing, you can be confident in the API testing interview too.
+  They are:
+
+  * Parameter Selection
+  * Parameter Combination
+  * Call sequencing
+  * Output verification and validation
+  * Another important challenge is providing input values, which is very difficult as GUI is not available in this case.
+
+  6. What kinds of bugs that API testing would often find?
+  Missing or duplicate functionality
+  Fails to handle error conditions gracefully
+  Stress
+  Reliability
+  Security
+  Unused flags
+  Not implemented errors
+  Inconsistent error handling
+  Performance
+  Multi-threading issues
+  Improper errors
+
+  7. Options Method : The OPTIONS Method lists down all the operations of a web service supports.
+  It creates read-only requests to the server.
+
+  8.
+  9.
+  10.

@@ -31,6 +31,21 @@ Grouping((groups = { "Reshu" }) : TestNG Groups allows us to perform groupings o
                                    Not only we can declare the methods within a specified group.
                                    we can also declare another group within a specified group.
 
+    TestNG xml for Grouping :
+                        <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+                              <suite name="Test-Suite" >
+                                  <test name="ToolsQA" >
+                                    <groups>
+                                      <run>
+                                        <include name = "Reshu"></include>
+                                            </run>
+                                              </groups>
+                                                <classes>
+                                              <class name="Testng" />
+                                            </classes>
+                                           </test
+                                          </suite>
+
 run one test multiple times : (invocationCount = 10)
 
 

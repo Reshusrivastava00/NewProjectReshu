@@ -1,0 +1,30 @@
+1) GET: GET is the simplest type of HTTP request method; the one that browsers use each time you click a link or type a URL
+into the address bar. It instructs the server to transmit the data identified by the URL to the client. Data should never be
+ modified on the server side as a result of a GET request. In this sense, a GET request is read-only.
+
+2) POST: The POST verb is mostly utilized to create new resources.
+ On successful creation, return HTTP status 201, returning a Location header with a link to the
+ newly-created resource with the 201 HTTP status.
+
+3) PUT: PUT is most-often utilized for update capabilities, PUT-ing to a known resource URI with the request body
+ containing the newly-updated representation of the original resource.
+
+ 4) DELETE: DELETE is pretty easy to understand. It is used to delete a resource identified by a URI.
+    On successful deletion, return HTTP status 200 (OK) along with a response body, perhaps the representation
+    of the deleted item (often demands too much bandwidth), or a wrapped response.
+    Either that or return HTTP status 204 (NO CONTENT) with no response body.
+    In other words, a 204 status with no body, or the JSEND-style response and HTTP status 200 are the recommended responses.
+
+    5) PATCH: Patch request says that we would only send the data that we need to modify without modifying or effecting
+    other parts of the data. Ex: if we need to update only the first name, we pass only the first name.
+
+
+PUT is a method of modifying resource where the client sends data that updates the entire resource .
+In a PUT request, the enclosed entity is considered to be a modified version of the resource stored on the origin server,
+and the client is requesting that the stored version be replaced.
+HTTP PUT is said to be idempotent, So if you send retry a request multiple times, that should be equivalent to a single request modification
+It has High Bandwidth.
+
+With PATCH, however, the enclosed entity contains a set of instructions describing how a resource currently residing on the origin server should be modified to produce a new version.
+HTTP PATCH is basically said to be non-idempotent. So if you retry the request N times, you will end up having N resources with N different URIs created on the server.
+Since Only data that need to be modified if send in the request body as a payload , It has Low Bandwidth.

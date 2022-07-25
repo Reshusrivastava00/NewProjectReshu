@@ -1,0 +1,56 @@
+HTTP Status Codes : 4XX
+ 400 Bad Request : This status code means that the server could not
+ understand the request because of invalid syntax.
+
+
+401 Unauthorized : This error shows that user is not authenticated.
+The 401 Unauthorized status code means that the request has not been applied
+ because the server requires user authentication.
+The client sent its authentication credentials to the server, but the server rejected the credentials.
+The client failed to provide any authentication credentials within the request.
+The client is banned. Some applications use 401 Unauthorized Errors to restrict access requests from specific IP addresses.
+Ex:  Login page error.
+
+402 Payment Required : This status code is a response reserved for future use.
+It was originally created to be implemented in digital payment systems,
+however, it is rarely used and a standard convention of using it does not exist.
+
+
+403 Forbidden : This Error shows that perticular user is not authorized to see the requested page.
+                when a web server forbids you from accessing the page you’re trying to open in your browser.
+                403 Forbidden status code means that the client request has been rejected because the client
+                does not have rights to access the content. Unlike a 401 error, the client's identity is known
+                to the server,but since they are not authorized to view the content,
+                giving the proper response is rejected by the server.
+                Ex: Role & Right issue.
+
+404 Not Found : This status code means that the server either did not find a current representation for the requested
+                 resource or is trying to hide its existence from an unauthorized client.
+                 When looking at things SEO-wise the 404 Not Found status code pages with a high volume of traffic
+                  should be redirected using a 301 to the most relevant page possible. For some pages, however,
+                  a 404 might be necessary, for example, if the product is out of stock for an extended period of time.
+                  If you have external links pointing to a page that returns 404, you will lose the link equity those links would otherwise give.
+
+405 Method Not Allowed : This status code means that while the server knows the request method,
+ the method has been disabled and can not be used.
+
+Idempotent: Whenever User asks something from server and get the same answer everytime.
+            An idempotent HTTP method is a method that can be invoked many times without
+            the different outcomes. It should not matter if the method has been called
+            only once, or ten times over. The result should always be the same.
+
+            Idempotency essentially means that the result of a successfully performed
+             request is independent of the number of times it is executed.
+Ex: POST is NOT idempotent.
+    GET, PUT, DELETE, HEAD, OPTIONS and TRACE are idempotent.
+
+    Cachable APIs :
+    GET requests is cachable by default – until a special condition arises.
+     Usually, browsers treat all GET requests as cacheable.
+     Ex : We can get the data on browser.
+
+     POST requests are not cacheable by default but can be made cacheable
+     if either an Expires header or a Cache-Control header with a directive,
+     to explicitly allows caching, is added to the response.
+
+     Responses to PUT and DELETE requests are not cacheable at all.
